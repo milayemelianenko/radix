@@ -159,10 +159,12 @@ main .hand-image {
   display: flex;
   justify-content: center;
   padding: 0px 112px 0px 112px;
+  position: relative;
 }
-.cards-section p {
+main .cards-section p {
   padding: 0;
   line-height: 23px;
+  font-size: 20px;
 }
 .cards-section div {
   background: linear-gradient(
