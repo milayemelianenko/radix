@@ -226,4 +226,6 @@ footer p {
 footer p {
   margin-left: 400px;
   font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
