@@ -207,7 +207,6 @@ footer {
   padding: 40px 100px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
 }
 footer .logo {
   margin-right: 80px;
@@ -217,11 +216,14 @@ footer a {
   color: #ffffff;
   margin-left: 40px;
   padding: 20px;
+  font-size: 16px;
+  font-weight: 300;
 }
 footer a:hover,
 footer p {
   opacity: 0.6;
 }
 footer p {
-  margin-left: 300px;
+  margin-left: 400px;
+  font-size: 14px;
 }
