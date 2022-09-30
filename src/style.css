@@ -3,12 +3,13 @@ body {
   text-decoration: none;
   box-sizing: border-box;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
-.bg-section {
+.banner-section {
   background-image: url(/image/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -16,42 +17,53 @@ body {
   height: calc(1000px * 1);
   margin-top: -65px;
 }
-.shadow {
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3);
+.bg-elements {
+  margin: -50px;
+  position: absolute;
 }
-.form-section h3,
+.bg-element {
+  position: absolute;
+}
+main .form-section h3,
 main h2,
 main h3 {
   font-family: "Americana Std", Helvetica, sans-serif;
+  animation: animation 3s ease 0s 1 normal forwards;
 }
 main p,
 main h6 {
   font-family: "Gilroy-Regular", sans-serif;
+  animation: animation 3s ease 0s 1 normal forwards;
 }
-.form-section {
+
+main .form-section-frame {
+  padding-top: 200px;
+  height: calc(740px * 1);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* display: none; */
+}
+main .form-section {
   background: linear-gradient(
-      119.17deg,
-      rgba(175, 180, 197, 0.8) 9.9%,
-      rgba(222, 225, 240, 0.8) 85.31%
-    ),
-    #ffffff;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(
-    118.3deg,
-    rgba(255, 255, 255, 0.73) 8.55%,
-    rgba(184, 184, 184, 0.58) 44.04%,
-    rgba(169, 169, 169, 0.58) 85.12%
+    149deg,
+    rgba(233, 235, 240, 1) 8%,
+    rgba(226, 228, 236, 1) 59%,
+    rgba(233, 235, 240, 1) 88%
   );
   border-radius: 30px;
+  border: 2px solid rgb(205, 204, 204);
   width: 860px;
   height: 480px;
   margin: 0 auto;
   padding: 50px;
   position: relative;
 }
-.gg {
-  padding-top: 200px;
+.heading h3,
+.row-section {
+  position: relative;
 }
 .row-section {
   display: flex;
@@ -119,9 +131,6 @@ form input {
   width: 340px;
   height: 393px;
 }
-main {
-  position: relative;
-}
 main h2 {
   font-size: 46px;
   text-align: center;
@@ -137,12 +146,17 @@ main h6 {
   text-align: center;
   margin: 30px 40px 10px 40px;
 }
+.img-section {
+  padding-bottom: 600px;
+}
 main .hand-image {
-  position: inherit;
-  right: -500px;
+  display: block;
+  position: absolute;
+  right: 0px;
 }
 .cards-section {
   display: flex;
+  justify-content: center;
   padding: 0px 112px 0px 112px;
 }
 .cards-section p {
@@ -151,9 +165,10 @@ main .hand-image {
 }
 .cards-section div {
   background: linear-gradient(
-    42.85deg,
-    rgba(218, 223, 238, 0.6) 5.06%,
-    rgba(233, 235, 240, 0.6) 98.95%
+    149deg,
+    rgba(233, 235, 240, 1) 8%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(233, 235, 240, 1) 88%
   );
   border-radius: 10px;
   margin: 20px;

@@ -5,88 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" media="all" href="/src/animate.css" />
+    <script src="/src/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <title>.Store</title>
   </head>
   <body>
-    <!-- <button id="open-btn" onclick="openForm(); return false;">
-      Slot button style="display: none"
-    </button> -->
-    <section class="bg-section" id="bg-section">
-      <div class="gg">
-        <div class="form-section" id="form-section">
-          <div class="heading">
-            <h3>Fill out the form</h3>
-            <a onclick="closedForm();" id="cancel-btn" class="cancel-btn">
-              <img
-                src="/image/cancel-btn.png"
-                alt="cancel-btn"
-                class="cancel-btn-icon"
-              />
-            </a>
-          </div>
-          <div class="row-section">
-            <div class="left-form-section">
-              <form>
-                <label for="fname">First Name</label>
-                <input
-                  type="text"
-                  id="fname"
-                  autocomplete="off"
-                  name="firstname"
-                />
-                <label for="fname">Last Name</label>
-                <input
-                  type="text"
-                  id="lname"
-                  autocomplete="off"
-                  name="lastname"
-                />
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" autocomplete="off" name="phone" />
-                <label for="email">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  autocomplete="off"
-                  name="email"
-                />
-                <input
-                  type="submit"
-                  class="submit-btn"
-                  value="Claim your .store"
-                />
-              </form>
+    <main>
+      <!-- <button id="open-btn">Slot button</button> -->
+      <section class="banner-section">
+        <div class="modals form-section-frame" id="form-section-frame">
+          <div class="form-section">
+            <div class="bg-elements">
+              <img src="/image/bg-gradient.png" alt="bg-element" />
+              <img src="/image/bg-gradient1.png" alt="bg-element" />
             </div>
-            <div class="right-section">
-              <img
-                src="/image/iphone-icon.png"
-                alt="phone-icon"
-                class="phone-icon-form img-fluid"
-              />
+            <div class="heading">
+              <h3>Fill out the form</h3>
+              <a id="cancel-btn" class="cancel-btn">
+                <img
+                  src="/image/cancel-btn.png"
+                  alt="cancel-btn"
+                  class="cancel-btn-icon"
+                />
+              </a>
+            </div>
+            <div class="row-section">
+              <div class="left-form-section">
+                <form>
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    autocomplete="off"
+                    name="firstname"
+                  />
+                  <label for="fname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    autocomplete="off"
+                    name="lastname"
+                  />
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    autocomplete="off"
+                    name="phone"
+                  />
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    autocomplete="off"
+                    name="email"
+                  />
+                  <input
+                    type="submit"
+                    class="submit-btn"
+                    value="Claim your .store"
+                  />
+                </form>
+              </div>
+              <div class="right-section">
+                <img
+                  src="/image/iphone-icon.png"
+                  alt="phone-icon"
+                  class="phone-icon-form img-fluid slideUpReturn"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <main>
-      <h2>What is .store?</h2>
-      <p>
+      </section>
+      <h2 class="fadeIn wow" data-wow-delay="0.3s">What is .store?</h2>
+      <p class="fadeIn wow" data-wow-delay="0.5s">
         .Store is a new domain extension with an aim to de-clutter the internet
         namespace in the retail industry.c If the primary goal of your website
         is to sell, nothing says it better than a .Store. Whether on a search
         engine listing or a print ad, users know that a .Store is a place to buy
         from.
       </p>
-      <img
-        src="/image/hand.png"
-        alt="hand-image"
-        class="hand-image img-fluid"
-        width="1007"
-      />
-      <h2>Why choose .store?</h2>
+      <div class="img-section">
+        <img
+          src="/image/hand.png"
+          alt="hand-image"
+          class="hand-image img-fluid fadeIn wow"
+          data-wow-delay="0.6s"
+          width="1007"
+        />
+      </div>
+
+      <h2 class="fadeIn wow" data-wow-delay="0.3s">Why choose .store?</h2>
       <section class="cards-section">
-        <div class="first-card">
+        <div class="first-card fadeIn wow" data-wow-delay="0.3s">
           <img
             src="/image/target-icon.png"
             alt="card-icon"
@@ -99,7 +114,7 @@
             “store” without spending crazy marketing dollars.
           </p>
         </div>
-        <div class="second-card">
+        <div class="second-card fadeIn wow" data-wow-delay="0.3s">
           <img
             src="/image/time-icon.png"
             alt="card-icon"
@@ -112,9 +127,9 @@
             in the US contain the word “store” across 7,500,000 unique keywords.
           </p>
         </div>
-        <div class="first-card">
+        <div class="fhird-card fadeIn wow" data-wow-delay="0.3s">
           <img
-            src="/image/target-icon.png"
+            src="/image/security-icon.png"
             alt="card-icon"
             class="card-icon"
             width="77"
@@ -127,30 +142,36 @@
           </p>
         </div>
       </section>
-      <h2>Our registrars</h2>
+      <h2 class="fadeIn wow" data-wow-delay="0.3s">Our registrars</h2>
       <section class="examples">
         <div class="examples-card">
-          <h3>GoDaddy</h3>
+          <h3 class="fadeIn wow" data-wow-delay="0.5s">GoDaddy</h3>
           <img
             src="/image/go_daddy_screen.jpg"
             alt="example-screen"
             width="282"
+            class="fadeIn wow"
+            data-wow-delay="0.6s"
           />
         </div>
         <div class="examples-card">
-          <h3>NameCheap</h3>
+          <h3 class="fadeIn wow" data-wow-delay="0.5s">NameCheap</h3>
           <img
             src="/image/name_cheap_screen.jpg"
             alt="example-screen"
             width="282"
+            class="fadeIn wow"
+            data-wow-delay="0.6s"
           />
         </div>
         <div class="examples-card">
-          <h3>BlueHost</h3>
+          <h3 class="fadeIn wow" data-wow-delay="0.5s">BlueHost</h3>
           <img
             src="/image/blue_host_screen.jpg"
             alt="example-screen"
             width="282"
+            class="fadeIn wow"
+            data-wow-delay="0.6s"
           />
         </div>
       </section>
