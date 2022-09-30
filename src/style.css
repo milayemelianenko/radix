@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.bg-section {
+  background-image: url(/image/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: calc(1000px * 1);
+  margin-top: -65px;
+}
+.shadow {
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3);
+}
+.form-section h3,
+main h2,
+main h3 {
+  font-family: "Americana Std", Helvetica, sans-serif;
+}
+main p,
+main h6 {
+  font-family: "Gilroy-Regular", sans-serif;
+}
+.form-section {
+  background: linear-gradient(
+      119.17deg,
+      rgba(175, 180, 197, 0.8) 9.9%,
+      rgba(222, 225, 240, 0.8) 85.31%
+    ),
+    #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+    118.3deg,
+    rgba(255, 255, 255, 0.73) 8.55%,
+    rgba(184, 184, 184, 0.58) 44.04%,
+    rgba(169, 169, 169, 0.58) 85.12%
+  );
+  border-radius: 30px;
+  width: 860px;
+  height: 480px;
+  margin: 0 auto;
+  padding: 50px;
+  position: relative;
+}
+.gg {
+  padding-top: 200px;
+}
+.row-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.form-section .heading h3 {
+  font-size: 26px;
+  text-align: center;
+}
+.form-section .heading .cancel-btn-icon {
+  width: 18px;
+  height: 17px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  cursor: pointer;
+}
+.form-section label {
+  font-family: "Roboto Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #535353;
+  margin-bottom: 5px;
+  pointer-events: none;
+}
+form {
+  width: 394px;
+  height: 18px;
+}
+form input {
+  color: #535353;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 220%;
+}
+.form-section .submit-btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  background: linear-gradient(
+    223.1deg,
+    #290e29 16.4%,
+    #0a052d 51.74%,
+    #19262d 88.59%
+  );
+  box-shadow: inset 4px 6px 10px 2px rgba(255, 255, 255, 0.25);
+  border-radius: 42px;
+  cursor: pointer;
+}
+.form-section .submit-btn:hover {
+  background: #290e29;
+}
+.form-section label,
+.form-section input {
+  display: block;
+}
+.form-section img {
+  width: 340px;
+  height: 393px;
+}
+main {
+  position: relative;
+}
+main h2 {
+  font-size: 46px;
+  text-align: center;
+  font-weight: 800;
+}
+main p {
+  text-align: center;
+  padding: 0px 200px;
+}
+main h6 {
+  font-size: 29px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 40px 10px 40px;
+}
+main .hand-image {
+  position: inherit;
+  right: -500px;
+}
+.cards-section {
+  display: flex;
+  padding: 0px 112px 0px 112px;
+}
+.cards-section p {
+  padding: 0;
+  line-height: 23px;
+}
+.cards-section div {
+  background: linear-gradient(
+    42.85deg,
+    rgba(218, 223, 238, 0.6) 5.06%,
+    rgba(233, 235, 240, 0.6) 98.95%
+  );
+  border-radius: 10px;
+  margin: 20px;
+  width: 385px;
+  height: 365px;
+  padding: 30px;
+}
+.cards-section img {
+  margin: 0 auto;
+  display: block;
+}
+.examples {
+  background-image: url(/image/background-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: calc(1000px * 1);
+  display: flex;
+  justify-content: center;
+}
+.examples div {
+  margin: 20px;
+}
+.examples h3 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32px;
+  text-align: center;
+}
+footer {
+  background-color: #161618;
+  display: flex;
+  padding: 40px 100px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+footer .logo {
+  margin-right: 80px;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 40px;
+  padding: 20px;
+}
+footer a:hover,
+footer p {
+  opacity: 0.6;
+}
+footer p {
+  margin-left: 300px;
+}
