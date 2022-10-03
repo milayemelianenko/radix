@@ -29,10 +29,13 @@ main h2,
 main h3 {
   font-family: "Americana Std", Helvetica, sans-serif;
 }
-main p,
-main h6 {
+main p {
   font-family: "Gilroy-Regular", sans-serif;
 }
+main h6 {
+  font-family: "Gilroy", sans-serif;
+}
+
 main h2 {
   font-weight: 900;
   font-style: extra bold;
@@ -169,13 +172,12 @@ main .cards-section div {
   border-radius: 10px;
   margin: 20px;
   width: 385px;
-  height: 365px;
+  height: 335px;
   padding: 30px 20px;
   position: relative;
 }
 main .cards-section h6 {
   font-size: 28px;
-  font-weight: 900;
   text-align: center;
   margin: 30px 30px 10px 30px;
 }
@@ -223,7 +225,7 @@ main .cards-section img {
 footer {
   background-color: #161618;
   display: flex;
-  padding: 40px 100px;
+  padding: 40px 110px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -248,5 +250,5 @@ footer p {
   font-weight: 300;
   letter-spacing: 0.02em;
   position: absolute;
-  right: 60px;
+  right: 110px;
 }
